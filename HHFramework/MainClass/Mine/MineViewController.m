@@ -7,6 +7,7 @@
 //
 
 #import "MineViewController.h"
+#import "LCProgressHUD.h"
 
 @interface MineViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+ 
+    [LCProgressHUD hide];
 }
 
 - (void)didReceiveMemoryWarning {

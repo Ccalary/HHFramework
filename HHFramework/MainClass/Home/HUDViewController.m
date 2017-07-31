@@ -7,6 +7,8 @@
 //
 
 #import "HUDViewController.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "TestViewController.h"
 
 @interface HUDViewController ()
 
@@ -16,10 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.fd_prefersNavigationBarHidden = YES;
    
     self.view.backgroundColor = [UIColor grayColor];
     self.navigationItem.title = @"HUD";
-    self.automaticallyAdjustsScrollViewInsets = NO;
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:scrollView];
@@ -34,6 +37,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
+}
+
+- (void)nextMonthBtnAction{
+    [self.navigationController pushViewController:[[TestViewController alloc] init] animated:YES];
 }
 
 

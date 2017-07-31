@@ -45,6 +45,8 @@
     
     [[self currentView] addSubview:hud];//添加到当前View
     
+    hud.offset = CGPointMake(0, -64);//偏移
+    
     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"LCProgressHUD" ofType:@"bundle"];
 
     switch (status) {
@@ -111,10 +113,10 @@
     [hud setMinSize:CGSizeZero];
     [hud setMode:MBProgressHUDModeText];
     [hud setRemoveFromSuperViewOnHide:YES];
-
     [[self currentView] addSubview:hud];//添加到当前View
-    
-    hud.frame = [UIApplication sharedApplication].keyWindow.frame;
+
+    //因为全局的ViewController中的View都下沉64
+    hud.offset = CGPointMake(0, -64);
     
     [hud hideAnimated:YES afterDelay:kToastDuration];
 }

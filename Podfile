@@ -9,5 +9,6 @@ pod 'MJRefresh'
 pod 'MJExtension'
 pod 'SDWebImage', '~> 4.0'
 pod 'MBProgressHUD', '~> 1.0.0'
+pod 'FDFullscreenPopGesture', '1.1'
 
 end

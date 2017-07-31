@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.navigationBar.translucent = NO; //设置了之后自动下沉64
+    self.navigationBar.translucent = NO; //设置了之后自动下沉64
     self.navigationBar.tintColor = [UIColor blackColor];
     
     //处理6p上面显示不全的bug
