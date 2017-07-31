@@ -12,15 +12,16 @@
 //大小尺寸
 #define ScreenWidth                     [[UIScreen mainScreen] bounds].size.width
 #define ScreenHeight                   ([[UIScreen mainScreen] bounds].size.height-64)
+#define ScreenFullHeight                [[UIScreen mainScreen] bounds].size.height
 
 //屏幕适配
 #define UIRate                          ScreenWidth/375.0
 
 //rgb颜色
-#define RGBColor(r, g, b) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:1.0]
+#define RGBCOLOR(r, g, b) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:1.0]
 
 //rgbA颜色（带透明度）
-#define RGBAColor(r, g, b, a) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:a]
+#define RGBACOLOR(r, g, b, a) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:a]
 
 //hex颜色
 #define HEXCOLOR(c) [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
@@ -29,14 +30,8 @@
 #define HEXACOLOR(c,a) [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:a]
 
 //font
-#define FONT_SYSTEM(x)               [UIFont systemFontOfSize:x]
-#define FONT_SYSTEM_BOLD(a)          [UIFont boldSystemFontOfSize:a]
-
-#define COLOR_BLACK                  HEXCOLOR(0x000000)
-#define COLOR_WHITE                  HEXCOLOR(0xffffff)
-#define COLOR_LIGHT_GRAY             HEXCOLOR(0x999999)
-#define COLOR_DARK_GRAY              HEXCOLOR(0x666666)
-#define COLOR_Background             HEXCOLOR(0xd2d2d2)
+#define FONT_SYSTEM(x)               [UIFont systemFontOfSize:x*UIRate] //已适配
+#define FONT_SYSTEM_BOLD(x)          [UIFont boldSystemFontOfSize:x*UIRate]
 
 
 //Debug信息,用printf解决真机调试打印不出来的问题

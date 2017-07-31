@@ -13,8 +13,19 @@
 		FE33E1E41F2AE2C0003BC178 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33E1DD1F2AE2C0003BC178 /* main.m */; };
 		FE33E1E81F2AE33A003BC178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE33E1E71F2AE33A003BC178 /* Assets.xcassets */; };
 		FE33E1EA1F2AE3E8003BC178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33E1E91F2AE3E8003BC178 /* LaunchScreen.storyboard */; };
-		FE33E1F81F2C525A003BC178 /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33E1F51F2C525A003BC178 /* UIColor+App.m */; };
-		FE33E1F91F2C525A003BC178 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33E1F71F2C525A003BC178 /* UIColor+Hex.m */; };
+		FE4E0E6E1F2EBA3B00320668 /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E6D1F2EBA3B00320668 /* UIColor+App.m */; };
+		FE4E0E791F2EC29A00320668 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E781F2EC29A00320668 /* HomeViewController.m */; };
+		FE4E0E7D1F2EC2C400320668 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E7C1F2EC2C400320668 /* MineViewController.m */; };
+		FE4E0E841F2EC3F700320668 /* NSArray+Dlog.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E7F1F2EC3F700320668 /* NSArray+Dlog.m */; };
+		FE4E0E861F2EC3F700320668 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E831F2EC3F700320668 /* UIView+Extension.m */; };
+		FE4E0E8A1F2EF7AD00320668 /* Connect.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E891F2EF7AD00320668 /* Connect.m */; };
+		FE4E0E901F2EF9A400320668 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E8D1F2EF9A400320668 /* BaseModel.m */; };
+		FE4E0E911F2EF9A400320668 /* ModelFieldError.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E8F1F2EF9A400320668 /* ModelFieldError.m */; };
+		FE4E0E971F2EF9C900320668 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E941F2EF9C900320668 /* BaseNavigationController.m */; };
+		FE4E0E981F2EF9C900320668 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0E961F2EF9C900320668 /* BaseTabBarController.m */; };
+		FE4E0EA81F2F041F00320668 /* LCProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE4E0EA51F2F041F00320668 /* LCProgressHUD.bundle */; };
+		FE4E0EA91F2F041F00320668 /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EA71F2F041F00320668 /* LCProgressHUD.m */; };
+		FE4E0EAC1F2F2FD900320668 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +40,32 @@
 		FE33E1E71F2AE33A003BC178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE33E1E91F2AE3E8003BC178 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE33E1F21F2C5110003BC178 /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
-		FE33E1F41F2C525A003BC178 /* UIColor+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+App.h"; sourceTree = "<group>"; };
-		FE33E1F51F2C525A003BC178 /* UIColor+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+App.m"; sourceTree = "<group>"; };
-		FE33E1F61F2C525A003BC178 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
-		FE33E1F71F2C525A003BC178 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		FE33E2201F2C8F6D003BC178 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FE4E0E6C1F2EBA3B00320668 /* UIColor+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+App.h"; sourceTree = "<group>"; };
+		FE4E0E6D1F2EBA3B00320668 /* UIColor+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+App.m"; sourceTree = "<group>"; };
+		FE4E0E771F2EC29A00320668 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FE4E0E781F2EC29A00320668 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FE4E0E7B1F2EC2C400320668 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		FE4E0E7C1F2EC2C400320668 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		FE4E0E7E1F2EC3F700320668 /* NSArray+Dlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Dlog.h"; sourceTree = "<group>"; };
+		FE4E0E7F1F2EC3F700320668 /* NSArray+Dlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Dlog.m"; sourceTree = "<group>"; };
+		FE4E0E821F2EC3F700320668 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		FE4E0E831F2EC3F700320668 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		FE4E0E881F2EF7AD00320668 /* Connect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connect.h; sourceTree = "<group>"; };
+		FE4E0E891F2EF7AD00320668 /* Connect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connect.m; sourceTree = "<group>"; };
+		FE4E0E8C1F2EF9A400320668 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		FE4E0E8D1F2EF9A400320668 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		FE4E0E8E1F2EF9A400320668 /* ModelFieldError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelFieldError.h; sourceTree = "<group>"; };
+		FE4E0E8F1F2EF9A400320668 /* ModelFieldError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelFieldError.m; sourceTree = "<group>"; };
+		FE4E0E931F2EF9C900320668 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		FE4E0E941F2EF9C900320668 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		FE4E0E951F2EF9C900320668 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		FE4E0E961F2EF9C900320668 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		FE4E0EA51F2F041F00320668 /* LCProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCProgressHUD.bundle; sourceTree = "<group>"; };
+		FE4E0EA61F2F041F00320668 /* LCProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCProgressHUD.h; sourceTree = "<group>"; };
+		FE4E0EA71F2F041F00320668 /* LCProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProgressHUD.m; sourceTree = "<group>"; };
+		FE4E0EAA1F2F2FD900320668 /* HUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
+		FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +118,11 @@
 		FE33E1B91F2AC8B7003BC178 /* HHFramework */ = {
 			isa = PBXGroup;
 			children = (
-				FE33E1EB1F2AE436003BC178 /* MainClass */,
-				FE33E1EC1F2AE469003BC178 /* ThirdPart */,
-				FE33E1E61F2AE31E003BC178 /* Resource */,
+				FE4E0E651F2EB1AA00320668 /* MainClass */,
 				FE33E1F01F2C50AF003BC178 /* Public */,
 				FE33E1ED1F2C500E003BC178 /* Utils */,
+				FE4E0E661F2EB1B900320668 /* ThirdPart */,
+				FE33E1E61F2AE31E003BC178 /* Resource */,
 				FE33E1D51F2AE205003BC178 /* AppFlies */,
 			);
 			path = HHFramework;
@@ -101,10 +133,10 @@
 			children = (
 				FE33E1D61F2AE2C0003BC178 /* AppDelegate.h */,
 				FE33E1D71F2AE2C0003BC178 /* AppDelegate.m */,
-				FE33E1E91F2AE3E8003BC178 /* LaunchScreen.storyboard */,
-				FE33E1DC1F2AE2C0003BC178 /* Info.plist */,
-				FE33E1DD1F2AE2C0003BC178 /* main.m */,
 				FE33E2201F2C8F6D003BC178 /* PrefixHeader.pch */,
+				FE33E1DC1F2AE2C0003BC178 /* Info.plist */,
+				FE33E1E91F2AE3E8003BC178 /* LaunchScreen.storyboard */,
+				FE33E1DD1F2AE2C0003BC178 /* main.m */,
 			);
 			path = AppFlies;
 			sourceTree = "<group>";
@@ -115,20 +147,6 @@
 				FE33E1E71F2AE33A003BC178 /* Assets.xcassets */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		FE33E1EB1F2AE436003BC178 /* MainClass */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainClass;
-			sourceTree = "<group>";
-		};
-		FE33E1EC1F2AE469003BC178 /* ThirdPart */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ThirdPart;
 			sourceTree = "<group>";
 		};
 		FE33E1ED1F2C500E003BC178 /* Utils */ = {
@@ -142,6 +160,10 @@
 		FE33E1EF1F2C5098003BC178 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				FE4E0E7E1F2EC3F700320668 /* NSArray+Dlog.h */,
+				FE4E0E7F1F2EC3F700320668 /* NSArray+Dlog.m */,
+				FE4E0E821F2EC3F700320668 /* UIView+Extension.h */,
+				FE4E0E831F2EC3F700320668 /* UIView+Extension.m */,
 				FE33E1F31F2C524C003BC178 /* FontColor */,
 			);
 			path = Category;
@@ -150,6 +172,7 @@
 		FE33E1F01F2C50AF003BC178 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				FE4E0E871F2EF33C00320668 /* Net */,
 				FE33E1F11F2C50EE003BC178 /* GlobalDefines */,
 			);
 			path = Public;
@@ -166,12 +189,98 @@
 		FE33E1F31F2C524C003BC178 /* FontColor */ = {
 			isa = PBXGroup;
 			children = (
-				FE33E1F41F2C525A003BC178 /* UIColor+App.h */,
-				FE33E1F51F2C525A003BC178 /* UIColor+App.m */,
-				FE33E1F61F2C525A003BC178 /* UIColor+Hex.h */,
-				FE33E1F71F2C525A003BC178 /* UIColor+Hex.m */,
+				FE4E0E6C1F2EBA3B00320668 /* UIColor+App.h */,
+				FE4E0E6D1F2EBA3B00320668 /* UIColor+App.m */,
 			);
 			path = FontColor;
+			sourceTree = "<group>";
+		};
+		FE4E0E651F2EB1AA00320668 /* MainClass */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0E701F2EC16800320668 /* Base */,
+				FE4E0E6F1F2EC13600320668 /* Home */,
+				FE4E0E7A1F2EC2B700320668 /* Mine */,
+			);
+			path = MainClass;
+			sourceTree = "<group>";
+		};
+		FE4E0E661F2EB1B900320668 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0EA41F2F041F00320668 /* LCProgressHUD */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		FE4E0E6F1F2EC13600320668 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0E771F2EC29A00320668 /* HomeViewController.h */,
+				FE4E0E781F2EC29A00320668 /* HomeViewController.m */,
+				FE4E0EAA1F2F2FD900320668 /* HUDViewController.h */,
+				FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FE4E0E701F2EC16800320668 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0E921F2EF9B500320668 /* BaseVC */,
+				FE4E0E8B1F2EF98200320668 /* BaseModel */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FE4E0E7A1F2EC2B700320668 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0E7B1F2EC2C400320668 /* MineViewController.h */,
+				FE4E0E7C1F2EC2C400320668 /* MineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		FE4E0E871F2EF33C00320668 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0E881F2EF7AD00320668 /* Connect.h */,
+				FE4E0E891F2EF7AD00320668 /* Connect.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		FE4E0E8B1F2EF98200320668 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0E8C1F2EF9A400320668 /* BaseModel.h */,
+				FE4E0E8D1F2EF9A400320668 /* BaseModel.m */,
+				FE4E0E8E1F2EF9A400320668 /* ModelFieldError.h */,
+				FE4E0E8F1F2EF9A400320668 /* ModelFieldError.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		FE4E0E921F2EF9B500320668 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0E931F2EF9C900320668 /* BaseNavigationController.h */,
+				FE4E0E941F2EF9C900320668 /* BaseNavigationController.m */,
+				FE4E0E951F2EF9C900320668 /* BaseTabBarController.h */,
+				FE4E0E961F2EF9C900320668 /* BaseTabBarController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		FE4E0EA41F2F041F00320668 /* LCProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0EA51F2F041F00320668 /* LCProgressHUD.bundle */,
+				FE4E0EA61F2F041F00320668 /* LCProgressHUD.h */,
+				FE4E0EA71F2F041F00320668 /* LCProgressHUD.m */,
+			);
+			path = LCProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE33E1EA1F2AE3E8003BC178 /* LaunchScreen.storyboard in Resources */,
+				FE4E0EA81F2F041F00320668 /* LCProgressHUD.bundle in Resources */,
 				FE33E1E81F2AE33A003BC178 /* Assets.xcassets in Resources */,
 				FE33E1E31F2AE2C0003BC178 /* Info.plist in Resources */,
 			);
@@ -297,10 +407,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4E0E861F2EC3F700320668 /* UIView+Extension.m in Sources */,
+				FE4E0E7D1F2EC2C400320668 /* MineViewController.m in Sources */,
+				FE4E0EA91F2F041F00320668 /* LCProgressHUD.m in Sources */,
+				FE4E0E841F2EC3F700320668 /* NSArray+Dlog.m in Sources */,
+				FE4E0EAC1F2F2FD900320668 /* HUDViewController.m in Sources */,
+				FE4E0E901F2EF9A400320668 /* BaseModel.m in Sources */,
+				FE4E0E8A1F2EF7AD00320668 /* Connect.m in Sources */,
 				FE33E1E41F2AE2C0003BC178 /* main.m in Sources */,
-				FE33E1F91F2C525A003BC178 /* UIColor+Hex.m in Sources */,
-				FE33E1F81F2C525A003BC178 /* UIColor+App.m in Sources */,
+				FE4E0E6E1F2EBA3B00320668 /* UIColor+App.m in Sources */,
+				FE4E0E971F2EF9C900320668 /* BaseNavigationController.m in Sources */,
+				FE4E0E981F2EF9C900320668 /* BaseTabBarController.m in Sources */,
 				FE33E1E01F2AE2C0003BC178 /* AppDelegate.m in Sources */,
+				FE4E0E911F2EF9A400320668 /* ModelFieldError.m in Sources */,
+				FE4E0E791F2EC29A00320668 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +526,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2M227336GQ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/chh/Documents/github/HHFramework/HHFramework/AppFlies/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/HHFramework/AppFlies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.find.HHFramework;
@@ -421,6 +543,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2M227336GQ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/chh/Documents/github/HHFramework/HHFramework/AppFlies/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/HHFramework/AppFlies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.find.HHFramework;
