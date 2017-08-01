@@ -27,7 +27,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
@@ -36,6 +35,7 @@
         
         UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_back"] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
         viewController.navigationItem.leftBarButtonItem = backItem;
+        
     }
     //一定要写在最后，要不然无效
     [super pushViewController:viewController animated:animated];

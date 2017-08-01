@@ -16,5 +16,6 @@
 #import <MJExtension/MJExtension.h>
 #import <MJRefresh/MJRefresh.h>
 #import "LCProgressHUD.h"
+#import <Masonry/Masonry.h>
 
 #endif /* PrefixHeader_pch */

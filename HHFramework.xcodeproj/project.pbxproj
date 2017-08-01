@@ -27,6 +27,7 @@
 		FE4E0EA81F2F041F00320668 /* LCProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE4E0EA51F2F041F00320668 /* LCProgressHUD.bundle */; };
 		FE4E0EA91F2F041F00320668 /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EA71F2F041F00320668 /* LCProgressHUD.m */; };
 		FE4E0EAC1F2F2FD900320668 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */; };
+		FE4E0EB01F301D9700320668 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EAF1F301D9700320668 /* CNPPopupController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		FE4E0EA71F2F041F00320668 /* LCProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCProgressHUD.m; sourceTree = "<group>"; };
 		FE4E0EAA1F2F2FD900320668 /* HUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDViewController.h; sourceTree = "<group>"; };
 		FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
+		FE4E0EAE1F301D9700320668 /* CNPPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
+		FE4E0EAF1F301D9700320668 /* CNPPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,7 @@
 		FE4E0E661F2EB1B900320668 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				FE4E0EAD1F301D9700320668 /* CNPPopupController */,
 				FE4E0EA41F2F041F00320668 /* LCProgressHUD */,
 			);
 			path = ThirdPart;
@@ -288,6 +292,15 @@
 				FE4E0EA71F2F041F00320668 /* LCProgressHUD.m */,
 			);
 			path = LCProgressHUD;
+			sourceTree = "<group>";
+		};
+		FE4E0EAD1F301D9700320668 /* CNPPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E0EAE1F301D9700320668 /* CNPPopupController.h */,
+				FE4E0EAF1F301D9700320668 /* CNPPopupController.m */,
+			);
+			path = CNPPopupController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,7 +402,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C4595B83E28E7D1FF11C34B5 /* [CP] Embed Pods Frameworks */ = {
@@ -422,6 +435,7 @@
 				FE4E0E901F2EF9A400320668 /* BaseModel.m in Sources */,
 				FE4E0E8A1F2EF7AD00320668 /* Connect.m in Sources */,
 				FE33E1E41F2AE2C0003BC178 /* main.m in Sources */,
+				FE4E0EB01F301D9700320668 /* CNPPopupController.m in Sources */,
 				FE4E0E6E1F2EBA3B00320668 /* UIColor+App.m in Sources */,
 				0D3D96A21F2F7DD600EE6DAF /* TestViewController.m in Sources */,
 				FE4E0E971F2EF9C900320668 /* BaseNavigationController.m in Sources */,
@@ -535,7 +549,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2M227336GQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/caohouhong/Desktop/Demo合集/HHFramework/HHFramework/AppFlies/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HHFramework/AppFlies/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HHFramework/AppFlies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.find.HHFramework;
@@ -552,7 +566,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2M227336GQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/caohouhong/Desktop/Demo合集/HHFramework/HHFramework/AppFlies/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HHFramework/AppFlies/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/HHFramework/AppFlies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.find.HHFramework;

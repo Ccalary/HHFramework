@@ -32,7 +32,9 @@
     [nextMonthBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [nextMonthBtn addTarget:self action:@selector(nextMonthBtnAction) forControlEvents:UIControlEventTouchUpInside];
     [scrollView addSubview:nextMonthBtn];
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

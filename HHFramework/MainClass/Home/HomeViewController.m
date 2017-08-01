@@ -35,8 +35,6 @@
     [button1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [button1 addTarget:self action:@selector(button1Action) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button1];
-
-
 }
 
 - (void)didReceiveMemoryWarning {
