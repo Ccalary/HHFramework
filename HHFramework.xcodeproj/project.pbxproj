@@ -28,6 +28,8 @@
 		FE4E0EA91F2F041F00320668 /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EA71F2F041F00320668 /* LCProgressHUD.m */; };
 		FE4E0EAC1F2F2FD900320668 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */; };
 		FE4E0EB01F301D9700320668 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EAF1F301D9700320668 /* CNPPopupController.m */; };
+		FE651A0D1F43CD6200B8C158 /* ScreenRotateNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE651A0C1F43CD6200B8C158 /* ScreenRotateNavController.m */; };
+		FE651A101F43D0A000B8C158 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE651A0F1F43D0A000B8C158 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,10 @@
 		FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
 		FE4E0EAE1F301D9700320668 /* CNPPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
 		FE4E0EAF1F301D9700320668 /* CNPPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = "<group>"; };
+		FE651A0B1F43CD6200B8C158 /* ScreenRotateNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenRotateNavController.h; sourceTree = "<group>"; };
+		FE651A0C1F43CD6200B8C158 /* ScreenRotateNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenRotateNavController.m; sourceTree = "<group>"; };
+		FE651A0E1F43D0A000B8C158 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FE651A0F1F43D0A000B8C158 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +237,8 @@
 				FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */,
 				0D3D96A01F2F7DD600EE6DAF /* TestViewController.h */,
 				0D3D96A11F2F7DD600EE6DAF /* TestViewController.m */,
+				FE651A0E1F43D0A000B8C158 /* DetailViewController.h */,
+				FE651A0F1F43D0A000B8C158 /* DetailViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -280,6 +288,8 @@
 				FE4E0E941F2EF9C900320668 /* BaseNavigationController.m */,
 				FE4E0E951F2EF9C900320668 /* BaseTabBarController.h */,
 				FE4E0E961F2EF9C900320668 /* BaseTabBarController.m */,
+				FE651A0B1F43CD6200B8C158 /* ScreenRotateNavController.h */,
+				FE651A0C1F43CD6200B8C158 /* ScreenRotateNavController.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -434,6 +444,8 @@
 				FE4E0EAC1F2F2FD900320668 /* HUDViewController.m in Sources */,
 				FE4E0E901F2EF9A400320668 /* BaseModel.m in Sources */,
 				FE4E0E8A1F2EF7AD00320668 /* Connect.m in Sources */,
+				FE651A0D1F43CD6200B8C158 /* ScreenRotateNavController.m in Sources */,
+				FE651A101F43D0A000B8C158 /* DetailViewController.m in Sources */,
 				FE33E1E41F2AE2C0003BC178 /* main.m in Sources */,
 				FE4E0EB01F301D9700320668 /* CNPPopupController.m in Sources */,
 				FE4E0E6E1F2EBA3B00320668 /* UIColor+App.m in Sources */,

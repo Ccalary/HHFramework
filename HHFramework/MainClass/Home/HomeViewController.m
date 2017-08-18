@@ -31,7 +31,7 @@
     [self.view addSubview:button];
     
     UIButton *button1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 120 + 64, ScreenWidth, 50)];
-    [button1 setTitle:@"HUD" forState:UIControlStateNormal];
+    [button1 setTitle:@"跳转" forState:UIControlStateNormal];
     [button1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [button1 addTarget:self action:@selector(button1Action) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button1];
@@ -47,11 +47,22 @@
 }
 
 - (void)buttonAction{
-    [LCProgressHUD showLoading:@"加载中..."];
+//    [LCProgressHUD showLoading:@"加载中..."];
 }
 
 - (void)button1Action{
     [self.navigationController pushViewController:[HUDViewController new] animated:YES];
 }
+
+////是否可以旋转
+//- (BOOL)shouldAutorotate
+//{
+//    return YES;
+//}
+////支持的方向
+//-(UIInterfaceOrientationMask)supportedInterfaceOrientations
+//{
+//    return UIInterfaceOrientationMaskPortrait;
+//}
 
 @end

@@ -1,4 +1,4 @@
-//
+ //
 //  BaseTabBarController.m
 //  TestDemo1
 //
@@ -50,4 +50,15 @@
     
     [self addChildViewController:baseNav];
 }
+-(BOOL)shouldAutorotate{
+//    return [self.selectedViewController shouldAutorotate];
+    return NO;
+}
+//支持的方向
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+
+//    return  [self.selectedViewController supportedInterfaceOrientations];//UIInterfaceOrientationMaskPortrait
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 @end
