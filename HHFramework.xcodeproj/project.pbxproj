@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D3D96A21F2F7DD600EE6DAF /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D96A11F2F7DD600EE6DAF /* TestViewController.m */; };
+		0DF1FD001F585AF6007D37BF /* LandScapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF1FCFF1F585AF6007D37BF /* LandScapeViewController.m */; };
 		5FAB04BADCF7E88E93406321 /* Pods_HHFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39340DFD60163EBBFFE1F69C /* Pods_HHFramework.framework */; };
 		FE33E1E01F2AE2C0003BC178 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33E1D71F2AE2C0003BC178 /* AppDelegate.m */; };
 		FE33E1E31F2AE2C0003BC178 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE33E1DC1F2AE2C0003BC178 /* Info.plist */; };
@@ -36,6 +37,8 @@
 		0D3D969E1F2F6A5D00EE6DAF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0D3D96A01F2F7DD600EE6DAF /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		0D3D96A11F2F7DD600EE6DAF /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		0DF1FCFE1F585AF6007D37BF /* LandScapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandScapeViewController.h; sourceTree = "<group>"; };
+		0DF1FCFF1F585AF6007D37BF /* LandScapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandScapeViewController.m; sourceTree = "<group>"; };
 		35878C355733CD99661780EE /* Pods-HHFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHFramework/Pods-HHFramework.release.xcconfig"; sourceTree = "<group>"; };
 		39340DFD60163EBBFFE1F69C /* Pods_HHFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52A3DF468A0A5B8E1F16DC4 /* Pods-HHFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHFramework/Pods-HHFramework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +260,8 @@
 			children = (
 				FE4E0E7B1F2EC2C400320668 /* MineViewController.h */,
 				FE4E0E7C1F2EC2C400320668 /* MineViewController.m */,
+				0DF1FCFE1F585AF6007D37BF /* LandScapeViewController.h */,
+				0DF1FCFF1F585AF6007D37BF /* LandScapeViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -454,6 +459,7 @@
 				FE4E0E981F2EF9C900320668 /* BaseTabBarController.m in Sources */,
 				FE33E1E01F2AE2C0003BC178 /* AppDelegate.m in Sources */,
 				FE4E0E911F2EF9A400320668 /* ModelFieldError.m in Sources */,
+				0DF1FD001F585AF6007D37BF /* LandScapeViewController.m in Sources */,
 				FE4E0E791F2EC29A00320668 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

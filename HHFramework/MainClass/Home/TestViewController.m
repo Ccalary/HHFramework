@@ -20,6 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"Test";
+    //不可使用手势返回
     self.fd_interactivePopDisabled = YES;
     DLog(@"当前线程：%@",[NSThread currentThread]);
     
