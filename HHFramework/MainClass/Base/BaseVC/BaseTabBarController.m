@@ -22,7 +22,6 @@
     UITabBar *tabbar = [UITabBar appearance];
     tabbar.tintColor = [UIColor blueColor];
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
     [self addChildViewControllers];
 }
 

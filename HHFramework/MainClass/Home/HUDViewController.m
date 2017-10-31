@@ -9,7 +9,6 @@
 #import "HUDViewController.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "TestViewController.h"
-#import "ScreenRotateNavController.h"
 
 @interface HUDViewController ()
 
@@ -31,7 +30,7 @@
     UIButton *nextMonthBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, 50)];
     [nextMonthBtn setTitle:@"message" forState:UIControlStateNormal];
     [nextMonthBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [nextMonthBtn addTarget:self action:@selector(nextMonthBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [nextMonthBtn addTarget:self action:@selector(nextMonthBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [scrollView addSubview:nextMonthBtn];
     
 }
@@ -47,18 +46,7 @@
     
 }
 
-- (void)nextMonthBtnAction:(UIButton *)button{
 
-    
-    TestViewController *vc = [[TestViewController alloc] init];
-    
-    ScreenRotateNavController *navController = [[ScreenRotateNavController alloc] initWithRootViewController:vc];
-    
-    [self presentViewController:navController animated:YES completion:nil];
-    
-    
-//    [self.navigationController pushViewController:[[TestViewController alloc] init] animated:YES];
-}
 
 ////是否可以旋转
 //- (BOOL)shouldAutorotate

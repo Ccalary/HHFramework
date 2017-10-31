@@ -17,13 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //设置了之后自动下沉64
+    //设置了之后自动下沉navigationBar的高度
     self.navigationBar.translucent = NO;
     //改变左右Item的颜色
     self.navigationBar.tintColor = [UIColor whiteColor];
 
     //改变title的字体样式
-    NSDictionary *textAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    NSDictionary *textAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor],NSFontAttributeName: FONT_SYSTEM_BOLD(18)};
     [self.navigationBar setTitleTextAttributes:textAttributes];
     //改变navBar的背景颜色
     [self.navigationBar setBarTintColor:HEXCOLOR(0x0099fff)];
@@ -51,13 +51,6 @@
 
 - (void)backAction{
     [self popViewControllerAnimated:YES];
-}
--(BOOL)shouldAutorotate{
-    return self.topViewController.shouldAutorotate;
-}
-//支持的方向
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return self.topViewController.supportedInterfaceOrientations;
 }
 
 @end

@@ -29,8 +29,11 @@
 		FE4E0EA91F2F041F00320668 /* LCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EA71F2F041F00320668 /* LCProgressHUD.m */; };
 		FE4E0EAC1F2F2FD900320668 /* HUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */; };
 		FE4E0EB01F301D9700320668 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E0EAF1F301D9700320668 /* CNPPopupController.m */; };
-		FE651A0D1F43CD6200B8C158 /* ScreenRotateNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE651A0C1F43CD6200B8C158 /* ScreenRotateNavController.m */; };
 		FE651A101F43D0A000B8C158 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE651A0F1F43D0A000B8C158 /* DetailViewController.m */; };
+		FEACD8E81FA7FC0800503C10 /* UserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACD8E41FA7FC0800503C10 /* UserHelper.m */; };
+		FEACD8E91FA7FC0800503C10 /* ToolsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACD8E51FA7FC0800503C10 /* ToolsHelper.m */; };
+		FEACD8EF1FA7FC5900503C10 /* HHRefreshNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACD8EC1FA7FC5900503C10 /* HHRefreshNormalFooter.m */; };
+		FEACD8F01FA7FC5900503C10 /* HHRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACD8EE1FA7FC5900503C10 /* HHRefreshNormalHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,10 +81,16 @@
 		FE4E0EAB1F2F2FD900320668 /* HUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDViewController.m; sourceTree = "<group>"; };
 		FE4E0EAE1F301D9700320668 /* CNPPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
 		FE4E0EAF1F301D9700320668 /* CNPPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = "<group>"; };
-		FE651A0B1F43CD6200B8C158 /* ScreenRotateNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenRotateNavController.h; sourceTree = "<group>"; };
-		FE651A0C1F43CD6200B8C158 /* ScreenRotateNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenRotateNavController.m; sourceTree = "<group>"; };
 		FE651A0E1F43D0A000B8C158 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		FE651A0F1F43D0A000B8C158 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FEACD8E41FA7FC0800503C10 /* UserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHelper.m; sourceTree = "<group>"; };
+		FEACD8E51FA7FC0800503C10 /* ToolsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsHelper.m; sourceTree = "<group>"; };
+		FEACD8E61FA7FC0800503C10 /* UserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHelper.h; sourceTree = "<group>"; };
+		FEACD8E71FA7FC0800503C10 /* ToolsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsHelper.h; sourceTree = "<group>"; };
+		FEACD8EB1FA7FC5900503C10 /* HHRefreshNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRefreshNormalFooter.h; sourceTree = "<group>"; };
+		FEACD8EC1FA7FC5900503C10 /* HHRefreshNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRefreshNormalFooter.m; sourceTree = "<group>"; };
+		FEACD8ED1FA7FC5900503C10 /* HHRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRefreshNormalHeader.h; sourceTree = "<group>"; };
+		FEACD8EE1FA7FC5900503C10 /* HHRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRefreshNormalHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +198,7 @@
 		FE33E1F01F2C50AF003BC178 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				FEACD8E31FA7FBFB00503C10 /* Helper */,
 				FE4E0E871F2EF33C00320668 /* Net */,
 				FE33E1F11F2C50EE003BC178 /* GlobalDefines */,
 			);
@@ -225,6 +235,7 @@
 		FE4E0E661F2EB1B900320668 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				FEACD8EA1FA7FC5900503C10 /* HHMJRefresh */,
 				FE4E0EAD1F301D9700320668 /* CNPPopupController */,
 				FE4E0EA41F2F041F00320668 /* LCProgressHUD */,
 			);
@@ -293,8 +304,6 @@
 				FE4E0E941F2EF9C900320668 /* BaseNavigationController.m */,
 				FE4E0E951F2EF9C900320668 /* BaseTabBarController.h */,
 				FE4E0E961F2EF9C900320668 /* BaseTabBarController.m */,
-				FE651A0B1F43CD6200B8C158 /* ScreenRotateNavController.h */,
-				FE651A0C1F43CD6200B8C158 /* ScreenRotateNavController.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -316,6 +325,28 @@
 				FE4E0EAF1F301D9700320668 /* CNPPopupController.m */,
 			);
 			path = CNPPopupController;
+			sourceTree = "<group>";
+		};
+		FEACD8E31FA7FBFB00503C10 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FEACD8E71FA7FC0800503C10 /* ToolsHelper.h */,
+				FEACD8E51FA7FC0800503C10 /* ToolsHelper.m */,
+				FEACD8E61FA7FC0800503C10 /* UserHelper.h */,
+				FEACD8E41FA7FC0800503C10 /* UserHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FEACD8EA1FA7FC5900503C10 /* HHMJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				FEACD8EB1FA7FC5900503C10 /* HHRefreshNormalFooter.h */,
+				FEACD8EC1FA7FC5900503C10 /* HHRefreshNormalFooter.m */,
+				FEACD8ED1FA7FC5900503C10 /* HHRefreshNormalHeader.h */,
+				FEACD8EE1FA7FC5900503C10 /* HHRefreshNormalHeader.m */,
+			);
+			path = HHMJRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,11 +480,14 @@
 				FE4E0EAC1F2F2FD900320668 /* HUDViewController.m in Sources */,
 				FE4E0E901F2EF9A400320668 /* BaseModel.m in Sources */,
 				FE4E0E8A1F2EF7AD00320668 /* Connect.m in Sources */,
-				FE651A0D1F43CD6200B8C158 /* ScreenRotateNavController.m in Sources */,
+				FEACD8F01FA7FC5900503C10 /* HHRefreshNormalHeader.m in Sources */,
 				FE651A101F43D0A000B8C158 /* DetailViewController.m in Sources */,
 				FE33E1E41F2AE2C0003BC178 /* main.m in Sources */,
+				FEACD8E91FA7FC0800503C10 /* ToolsHelper.m in Sources */,
 				FE4E0EB01F301D9700320668 /* CNPPopupController.m in Sources */,
+				FEACD8E81FA7FC0800503C10 /* UserHelper.m in Sources */,
 				FE4E0E6E1F2EBA3B00320668 /* UIColor+App.m in Sources */,
+				FEACD8EF1FA7FC5900503C10 /* HHRefreshNormalFooter.m in Sources */,
 				0D3D96A21F2F7DD600EE6DAF /* TestViewController.m in Sources */,
 				FE4E0E971F2EF9C900320668 /* BaseNavigationController.m in Sources */,
 				FE4E0E981F2EF9C900320668 /* BaseTabBarController.m in Sources */,
