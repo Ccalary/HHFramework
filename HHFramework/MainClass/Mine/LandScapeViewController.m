@@ -31,12 +31,6 @@
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     
-    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    delegate.allowLandscapeRight = NO;
-    
-    //强制旋转成竖屏
-    NSNumber *value = [NSNumber numberWithInt:UIDeviceOrientationPortrait];
-    [[UIDevice currentDevice]setValue:value forKey:@"orientation"];
 }
 
 @end

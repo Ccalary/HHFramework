@@ -10,7 +10,6 @@
 		0D3D96A21F2F7DD600EE6DAF /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D96A11F2F7DD600EE6DAF /* TestViewController.m */; };
 		0DF1FD001F585AF6007D37BF /* LandScapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF1FCFF1F585AF6007D37BF /* LandScapeViewController.m */; };
 		5FAB04BADCF7E88E93406321 /* Pods_HHFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39340DFD60163EBBFFE1F69C /* Pods_HHFramework.framework */; };
-		FE33E1E01F2AE2C0003BC178 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33E1D71F2AE2C0003BC178 /* AppDelegate.m */; };
 		FE33E1E31F2AE2C0003BC178 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE33E1DC1F2AE2C0003BC178 /* Info.plist */; };
 		FE33E1E41F2AE2C0003BC178 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33E1DD1F2AE2C0003BC178 /* main.m */; };
 		FE33E1E81F2AE33A003BC178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE33E1E71F2AE33A003BC178 /* Assets.xcassets */; };
@@ -34,6 +33,8 @@
 		FEACD8E91FA7FC0800503C10 /* ToolsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACD8E51FA7FC0800503C10 /* ToolsHelper.m */; };
 		FEACD8EF1FA7FC5900503C10 /* HHRefreshNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACD8EC1FA7FC5900503C10 /* HHRefreshNormalFooter.m */; };
 		FEACD8F01FA7FC5900503C10 /* HHRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACD8EE1FA7FC5900503C10 /* HHRefreshNormalHeader.m */; };
+		FEACD8F51FA8009300503C10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACD8F41FA8009300503C10 /* AppDelegate.m */; };
+		FEDB592C1FBAC46100D1D31F /* BaseTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDB592A1FBAC46100D1D31F /* BaseTabbar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +47,6 @@
 		39340DFD60163EBBFFE1F69C /* Pods_HHFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52A3DF468A0A5B8E1F16DC4 /* Pods-HHFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHFramework/Pods-HHFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		FE33E1B71F2AC8B7003BC178 /* HHFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE33E1D61F2AE2C0003BC178 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FE33E1D71F2AE2C0003BC178 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FE33E1DC1F2AE2C0003BC178 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE33E1DD1F2AE2C0003BC178 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE33E1E71F2AE33A003BC178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +90,10 @@
 		FEACD8EC1FA7FC5900503C10 /* HHRefreshNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRefreshNormalFooter.m; sourceTree = "<group>"; };
 		FEACD8ED1FA7FC5900503C10 /* HHRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRefreshNormalHeader.h; sourceTree = "<group>"; };
 		FEACD8EE1FA7FC5900503C10 /* HHRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRefreshNormalHeader.m; sourceTree = "<group>"; };
+		FEACD8F31FA8009300503C10 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEACD8F41FA8009300503C10 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEDB592A1FBAC46100D1D31F /* BaseTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabbar.m; sourceTree = "<group>"; };
+		FEDB592B1FBAC46100D1D31F /* BaseTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabbar.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,7 @@
 		FE33E1B91F2AC8B7003BC178 /* HHFramework */ = {
 			isa = PBXGroup;
 			children = (
+				FEACD8F21FA8007F00503C10 /* AppDelegate */,
 				FE4E0E651F2EB1AA00320668 /* MainClass */,
 				FE33E1F01F2C50AF003BC178 /* Public */,
 				FE33E1ED1F2C500E003BC178 /* Utils */,
@@ -157,8 +161,6 @@
 		FE33E1D51F2AE205003BC178 /* AppFlies */ = {
 			isa = PBXGroup;
 			children = (
-				FE33E1D61F2AE2C0003BC178 /* AppDelegate.h */,
-				FE33E1D71F2AE2C0003BC178 /* AppDelegate.m */,
 				FE33E2201F2C8F6D003BC178 /* PrefixHeader.pch */,
 				FE33E1DC1F2AE2C0003BC178 /* Info.plist */,
 				FE33E1E91F2AE3E8003BC178 /* LaunchScreen.storyboard */,
@@ -178,6 +180,7 @@
 		FE33E1ED1F2C500E003BC178 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FEACD8F11FA8001200503C10 /* MineWidget */,
 				FE33E1EF1F2C5098003BC178 /* Category */,
 			);
 			path = Utils;
@@ -222,6 +225,15 @@
 			path = FontColor;
 			sourceTree = "<group>";
 		};
+		FE33FEF51FABFD5400D9A082 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				FEDB592B1FBAC46100D1D31F /* BaseTabbar.h */,
+				FEDB592A1FBAC46100D1D31F /* BaseTabbar.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
 		FE4E0E651F2EB1AA00320668 /* MainClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +272,7 @@
 		FE4E0E701F2EC16800320668 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				FE33FEF51FABFD5400D9A082 /* BaseView */,
 				FE4E0E921F2EF9B500320668 /* BaseVC */,
 				FE4E0E8B1F2EF98200320668 /* BaseModel */,
 			);
@@ -347,6 +360,22 @@
 				FEACD8EE1FA7FC5900503C10 /* HHRefreshNormalHeader.m */,
 			);
 			path = HHMJRefresh;
+			sourceTree = "<group>";
+		};
+		FEACD8F11FA8001200503C10 /* MineWidget */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MineWidget;
+			sourceTree = "<group>";
+		};
+		FEACD8F21FA8007F00503C10 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FEACD8F31FA8009300503C10 /* AppDelegate.h */,
+				FEACD8F41FA8009300503C10 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEACD8F51FA8009300503C10 /* AppDelegate.m in Sources */,
 				FE4E0E861F2EC3F700320668 /* UIView+Extension.m in Sources */,
 				FE4E0E7D1F2EC2C400320668 /* MineViewController.m in Sources */,
 				FE4E0EA91F2F041F00320668 /* LCProgressHUD.m in Sources */,
@@ -491,10 +521,10 @@
 				0D3D96A21F2F7DD600EE6DAF /* TestViewController.m in Sources */,
 				FE4E0E971F2EF9C900320668 /* BaseNavigationController.m in Sources */,
 				FE4E0E981F2EF9C900320668 /* BaseTabBarController.m in Sources */,
-				FE33E1E01F2AE2C0003BC178 /* AppDelegate.m in Sources */,
 				FE4E0E911F2EF9A400320668 /* ModelFieldError.m in Sources */,
 				0DF1FD001F585AF6007D37BF /* LandScapeViewController.m in Sources */,
 				FE4E0E791F2EC29A00320668 /* HomeViewController.m in Sources */,
+				FEDB592C1FBAC46100D1D31F /* BaseTabbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

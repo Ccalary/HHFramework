@@ -10,8 +10,9 @@
 #import "BaseNavigationController.h"
 #import "HomeViewController.h"
 #import "MineViewController.h"
+#import "BaseTabbar.h"
 
-@interface BaseTabBarController ()
+@interface BaseTabBarController ()<BaseTabbarDelegate>
 
 @end
 
@@ -21,6 +22,12 @@
     [super viewDidLoad];
     UITabBar *tabbar = [UITabBar appearance];
     tabbar.tintColor = [UIColor blueColor];
+    
+    //创建自己的tabbar，然后用kvc将自己的tabbar和系统的tabBar替换下
+    BaseTabbar *baseTabbar = [[BaseTabbar alloc] init];
+    baseTabbar.myDelegate = self;
+    //kvc实质是修改了系统的_tabBar
+    [self setValue:baseTabbar forKeyPath:@"tabBar"];
     
     [self addChildViewControllers];
 }
@@ -38,6 +45,8 @@
     
     [self addChildrenViewController:homeVC andTitle:@"首页" andImageName:@"tab_me" andSelectImage:@"tab_me_pre"];
     [self addChildrenViewController:[[MineViewController alloc] init] andTitle:@"我" andImageName:@"tab_me" andSelectImage:@"tab_me_pre"];
+    [self addChildrenViewController:[[MineViewController alloc] init] andTitle:@"我" andImageName:@"tab_me" andSelectImage:@"tab_me_pre"];
+    [self addChildrenViewController:[[MineViewController alloc] init] andTitle:@"我" andImageName:@"tab_me" andSelectImage:@"tab_me_pre"];
 }
 
 - (void)addChildrenViewController:(UIViewController *)childVC andTitle:(NSString *)title andImageName:(NSString *)imageName andSelectImage:(NSString *)selectedImage{
@@ -49,15 +58,8 @@
     
     [self addChildViewController:baseNav];
 }
--(BOOL)shouldAutorotate{
-//    return [self.selectedViewController shouldAutorotate];
-    return NO;
-}
-//支持的方向
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
 
-//    return  [self.selectedViewController supportedInterfaceOrientations];//UIInterfaceOrientationMaskPortrait
-    return UIInterfaceOrientationMaskPortrait;
+#pragma mark - BaseTabbarDelegate
+- (void)baseTabbarClickButtonAction:(BaseTabbar *)tabBar{
 }
-
 @end
