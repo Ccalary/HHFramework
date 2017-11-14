@@ -9,7 +9,7 @@
 #### AppDelegate
 * AppDelegate  程序入口
 #### MainClass
-* Base 一些基类，包括BaseNavigationController, BaseTabBarController, BaseModel等
+* Base 一些基类，包括BaseNavigationController, BaseTabBarController, BaseModel等，**新增了tabbar中间按钮**
 * Home 主界面
 * Mine 我的界面
 #### Public
