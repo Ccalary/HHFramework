@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, LCProgressHUDStatus) {
 
 #pragma mark - 建议使用的方法
 
-/** 在 当前View 上添加一个只显示文字的 HUD */
+/** 在 keyWindow 上添加一个只显示文字的 HUD */
 + (void)showMessage:(NSString *)text;
 
 /** 在 当前View 上添加一个提示`信息`的 HUD */

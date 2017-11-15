@@ -31,7 +31,7 @@
 }
 
 + (void)showMessage:(NSString *)text{
-    [self showMessage:text inKeyWindow:NO];
+    [self showMessage:text inKeyWindow:YES];
 }
 
 + (void)showStatus:(LCProgressHUDStatus)status text:(NSString *)text inKeyWindow:(BOOL)inKey{
@@ -51,11 +51,18 @@
     hud.label.font = [UIFont boldSystemFontOfSize:TEXT_SIZE];
     [hud setRemoveFromSuperViewOnHide:YES];
     [hud setMinSize:CGSizeMake(BGVIEW_WIDTH, BGVIEW_WIDTH)];
+    CGFloat offsetHeight = 0;
     if (inKey){
         [[UIApplication sharedApplication].keyWindow addSubview:hud];
+        offsetHeight = 0;
     }else{
         [[self currentView] addSubview:hud];//添加到当前View
+        //因为全局的ViewController中的View都下沉
+        offsetHeight = -([UIApplication sharedApplication].statusBarFrame.size.height + 44.0)/2.0;
     }
+    CGRect frame = hud.frame;
+    frame.origin.y = offsetHeight;
+    hud.frame = frame;
     
     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"LCProgressHUD" ofType:@"bundle"];
     
@@ -123,12 +130,19 @@
     [hud setMinSize:CGSizeZero];
     [hud setMode:MBProgressHUDModeText];
     [hud setRemoveFromSuperViewOnHide:YES];
+    CGFloat offsetHeight = 0;
     if (inKey){
         [[UIApplication sharedApplication].keyWindow addSubview:hud];
+        offsetHeight = 0;
     }else{
         [[self currentView] addSubview:hud];//添加到当前View
+        //因为全局的ViewController中的View都下沉
+        offsetHeight = -([UIApplication sharedApplication].statusBarFrame.size.height + 44.0)/2.0;
     }
-
+    CGRect frame = hud.frame;
+    frame.origin.y = offsetHeight;
+    hud.frame = frame;
+    
     [hud hideAnimated:YES afterDelay:kToastDuration];
 }
 
@@ -177,11 +191,10 @@
     
     if ([controller isKindOfClass:[UITabBarController class]]) {
         controller = [(UITabBarController *)controller selectedViewController];
-        return controller.view;
     }
+  
     if([controller isKindOfClass:[UINavigationController class]]) {
         controller = [(UINavigationController *)controller visibleViewController];
-        return controller.view;
     }
     if (!controller) {
         return [UIApplication sharedApplication].keyWindow;
